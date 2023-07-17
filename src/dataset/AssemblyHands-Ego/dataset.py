@@ -410,7 +410,7 @@ class Dataset(torch.utils.data.Dataset):
                 vis_valid,
                 self.skeleton,
                 filename,
-                self.cfg,
+                self.cfg.vis_dir,
                 is_print=True,
             )
             filename = f"vis_{frame_id:04d}_{gt_hand_type}_3d.jpg"
